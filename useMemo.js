@@ -3,6 +3,14 @@
 - It is simillar to useCallback but difference i.e it caches the value where as useCallback caches funciton.
 - 
 
+| Hook / Feature  | Purpose                                | Works With                |
+| --------------- | -------------------------------------- | ------------------------- |
+| **React.memo**  | Prevents re-render when props are same | `useCallback`, `useMemo`  |
+| **useCallback** | Caches a function                      | `React.memo`              |
+| **useMemo**     | Caches a computed value                | `React.memo` (indirectly) |
+
+
+  
 Code 
 
 import React, { useMemo, useState } from 'react';
