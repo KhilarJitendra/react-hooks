@@ -1,4 +1,4 @@
-useSatate
+useState
 
 const [something, setSomething] = useState(initialState);
 
