@@ -18,6 +18,14 @@ IMP Concepts -
 - useId generates deterministic IDs based on render order, not randomness. 
   React guarantees the same order on the server and client, which makes the IDs stable and hydration-safe.
 
+- Why IDs look like :r0:, :r1:
+
+  r → React-generated
+
+  Number → order in the render tree
+
+  : → internal namespace (to avoid collisions
+
 
 
 import React, { useId } from 'react';
