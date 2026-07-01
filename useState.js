@@ -2,6 +2,18 @@ useState
 
 const [something, setSomething] = useState(initialState);
 
+
+** NOTE **
+------------------------------------------
+So React literally checks:
+
+Is this a function?
+✅ Call it with the current state.
+Is this a value?
+✅ Replace the state with that value.
+
+------------------------------------------
+
 Explination - 
 
 1. initialState
